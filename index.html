@@ -1,1 +1,170 @@
-Hola Mundo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacaophile - Bienvenido</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8e6d1; /* Color de fondo cálido */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #4b2e17; /* Color marrón chocolate */
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Contenedor principal */
+        .container {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4b2e17;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #5c3b28;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Botones */
+        .button-container {
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #d2691e; /* Color caramelo */
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b85c1b;
+        }
+
+        /* Sección de imágenes */
+        .image-gallery {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-gallery img {
+            margin: 10px;
+            border-radius: 10px;
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 15px;
+            background-color: #4b2e17;
+            color: white;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Detalles adicionales */
+        .container::before {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: #d2691e;
+            margin: 0 auto 20px auto;
+            border-radius: 2px;
+        }
+
+        .container img {
+            margin-top: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cacaophile</h1>
+    </header>
+
+    <div class="container">
+        <h2>Bienvenido, amante del chocolate</h2>
+        <p>
+            Gracias por iniciar sesión en nuestra chocolatería. Aquí puedes explorar nuestras deliciosas creaciones de chocolate artesanal,
+            hechas con ingredientes naturales. ¡Esperamos que disfrutes de nuestra selección de chocolates
+            como nunca antes!
+        </p>
+        
+        <div class="button-container">
+            <button onclick="window.location.href='productos.php'">Ver Productos</button>
+            <button onclick="window.location.href='contacto.php'">Contacto</button>
+        </div>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/6954/6954015.png" alt="Chocolate Icono">
+    </div>
+
+    <!-- Sección de imágenes de productos -->
+    <div class="image-gallery">
+        <img src="https://i0.wp.com/blogedenred.com.uy/wp-content/uploads/2021/07/chocolate-amargo.jpg?fit=1000%2C560&ssl=1" alt="Producto de Chocolate 1">
+        <img src="https://chocolatestorras.com/wp-content/uploads/2021/04/Hacer-tableta-de-chocolate-con-leche-en-casa.jpg" alt="Producto de Chocolate 2">
+        <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/PRNBVO2NF5NTZPSQTK6HMDLVRQ.jpg" alt="Producto de Chocolate 3">
+        <img src="https://www.purochocolate.life/wp-content/uploads/2022/04/Chocolate-con-cafe-scaled.jpg" alt="Producto de Chocolate 4">
+    </div>
+
+    <footer>
+        &copy; 2024 Cacaophile. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
